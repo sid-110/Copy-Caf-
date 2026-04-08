@@ -1,0 +1,255 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+#main {
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #feac00, #ffb703);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2rem;
+  overflow: hidden;
+}
+
+.main-box {
+  background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.1));
+  border-radius: 1rem;
+  backdrop-filter: blur(2rem);
+  width: 90%;
+  max-width: 500px;
+  min-height: 80vh;
+  padding: 2rem;
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.main-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.form-card {
+  width: 100%;
+}
+
+.form-card h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: #333;
+  position: relative;
+}
+
+.form-card h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #feac00;
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.form-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-card input,
+.form-card select,
+.form-card button {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.6);
+  transition: all 0.3s ease;
+  font-size: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.form-card input:focus,
+.form-card select:focus {
+  outline: none;
+  border-color: #ffb703;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 10px rgba(255, 184, 3, 0.3);
+}
+
+.form-card button {
+  background: linear-gradient(135deg, #feac00, #fb8500);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-card button:hover {
+  background: linear-gradient(135deg, #fb8500, #feac00);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(251, 133, 0, 0.4);
+}
+
+#price {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #264653;
+  font-size: 1.2rem;
+}
+
+.circle1,
+.circle2 {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.4)
+  );
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  animation: float 6s ease-in-out infinite;
+}
+
+.circle1 {
+  top: 4%;
+  right: 2%;
+}
+
+.circle2 {
+  bottom: 4%;
+  left: 2%;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+/* ------------ Responsive Design ------------- */
+@media (max-width: 985px) {
+  .main-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 864px) {
+  .main-box {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  .main-box {
+    width: 95%;
+  }
+}
+
+@media (max-width: 680px) {
+  .main-box {
+    padding: 1.5rem;
+  }
+
+  .form-card h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 445px) {
+  .main-box {
+    padding: 1rem;
+  }
+
+  .form-card h2 {
+    font-size: 1.3rem;
+  }
+
+  .form-card input,
+  .form-card select,
+  .form-card button {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 385px) {
+  .form-card h2 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 315px) {
+  .form-card h2 {
+    font-size: 1rem;
+  }
+
+  .form-card input,
+  .form-card select,
+  .form-card button {
+    font-size: 0.85rem;
+  }
+}
+
+.back-btn {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    backdrop-filter: blur(10px);
+    font-size: 1rem;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    z-index: 5;
+  }
+  
+  .back-btn:hover {
+    background: rgba(255, 255, 255, 0.5);
+    transform: translateX(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    color: #000;
+  }
+  
+  .back-btn i {
+    font-size: 1.1rem;
+  }
+  
+  
+  @media (max-width: 445px) {
+    .back-btn {
+      top: 1rem;
+      left: 1rem;
+      padding: 0.4rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Get a Quote - Copy Café</title>
+  <link
+			rel="shortcut icon"
+			href="images/fav-icon.png"
+			type="image/x-icon"
+		/>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/0810b2c534.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="quote.css" />
+ 
+  
+</head>
+<body>
+  <section id="main">
+    <a href="contact.html" class="back-btn">
+      <i class='bx bx-arrow-back'></i> Back
+    </a>
+    <div class="main-box">
+      <div class="form-card">
+        <h2>📄 Get a Quote</h2>
+        <form id="quoteForm" name="submit-to-google-sheet">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <input type="tel" name="mobile" pattern="[0-9]{10}" maxlength="10" placeholder="Phone Number" required />
+
+          <input type="email" name="email" placeholder="Email Address (Optional)" />
+          <textarea name="message" placeholder="Your requirements..." required></textarea>
+          <button type="submit">Submit</button>
+          <span id="form-message"></span>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <div class="circle1"></div>
+  <div class="circle2"></div>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyDc8YzWV2jGT44j7E7tZISZ7MwghaTF4upypELyNryQop0I6wRB02emLeGE7uS5krV/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById('form-message');
+
+    form.addEventListener('submit', e => {
+      e.preventDefault();
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "<strong style='color:white;'>Quote request sent successfully!</strong>";
+
+          setTimeout(() => msg.innerHTML = "", 5000);
+          form.reset();
+        })
+        .catch(error => {
+          msg.innerHTML = "<strong style='color:white;'>Submission failed. Try again!</strong>";
+        });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Copy Café</title>
+		<!-- -----------Fav Icon----------- -->
+		<link rel="shortcut icon" href="images/logo1.png" type="image/x-icon" />
+
+		<!-- --------------Link to CSS-------------- -->
+		<link rel="stylesheet" href="styles.css" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Slab:wght@100..900&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/0810b2c534.js"
+			crossorigin="anonymous"
+		></script>
+		<!-- Link Swiper's CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+		/>
+
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+	</head>
+
+	<body>
+		<!-- -------------------Loader------------------------- -->
+		<div class="loader" id="loader">
+			<img src="images/loader.gif" alt="gif img" />
+		</div>
+
+		<!-- ------Header----- -->
+		<header>
+			<nav class="nav-container">
+				<div class="container nav" id="head">
+					<!-- Logo -->
+					<a href="#" class="logo">Copy Café</a>
+
+					<!-- Navbar -->
+					<div class="navbar">
+						<li><a href="#about" class="nav-link">About Us</a></li>
+						<li>
+							<a href="#services" class="nav-link">Services</a>
+						</li>
+						<li>
+							<a href="locate.html" class="nav-link">Locate Us</a>
+						</li>
+						<li>
+							<a href="#testimonial" class="nav-link"
+								>Testimonial</a
+							>
+						</li>
+						<li>
+							<a href="contact.html" class="nav-link"
+								>Contact Us</a
+							>
+						</li>
+						<a href="print-request.html" class="register-btn btn">Print</a>
+					</div>
+
+					<!-- Menu Icon - move this inside container.nav -->
+					<div class="menu-icon">
+						<div class="line1"></div>
+						<div class="line2"></div>
+						<div class="line3"></div>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- ----------Home--------- -->
+		<section class="home" id="home">
+			<div class="home-data container">
+				<!-- ------------Home Text------ -->
+				<div class="home-text">
+					<h3>We Provide</h3>
+					<h2>
+						Premium Printing <br />
+						Solutions for <br />
+						Every Need
+					</h2>
+
+					<div class="home-btns">
+						<a href="print-request.html" class="book-btn btn">Print</a>
+						<a href="#about" class="explore-btn btn">Explore</a>
+					</div>
+					<!-- ------------Home Image--------- -->
+					<div class="home-img">
+						<img src="images/home.jpg" alt="Home Image" />
+					</div>
+					<!-- ----------------Contact Info------------ -->
+					<div class="contact-info">
+						<div class="contact-info-box">
+							<i class="fa-solid fa-location-dot"></i>
+							<span>72,Indrapuri,Ayodhya Bypass,Bhopal</span>
+						</div>
+						<div class="contact-info-box">
+							<i class="fa-solid fa-phone"></i>
+							<span>(91)74897-94090</span>
+						</div>
+						<div class="contact-info-box">
+							<i class="fa-solid fa-envelope"></i>
+							<span>copycafe77@gmail.com</span>
+						</div>
+					</div>
+				</div>
+				<!-- ------2nd Home Image For Maing Responsive to smaller Screens----- -->
+				<div class="home-bg">
+					<img src="images/home.jpg" alt="" />
+				</div>
+			</div>
+		</section>
+		<!-- ---------About------ -->
+		<section class="about container" id="about">
+			<!-- ---About Text---- -->
+			<div class="about-text">
+				<!-- ------Heading------- -->
+				<h2 class="heading1 top">About Us</h2>
+				<h1 class="top">Your Prints, Our Priority</h1>
+				<p>
+					We offer exceptional printing solutions designed to make
+					your brand, artwork, or memories look their absolute best.
+				</p>
+
+				<a href="#services" class="learn-more">
+					<span class="top">Learn More</span>
+					<i class="fa-solid fa-arrow-right top"></i>
+				</a>
+
+				<!-- -------About Data---- -->
+				<div class="about-data">
+					<!-- -------Box 1---------- -->
+					<div class="about-box">
+						<img src="images/about-1.jpg" alt="Skin Care" />
+						<div class="about-overlay1">
+							<div class="overlay-text">
+								<h2>Brochures</h2>
+								<p class="overlay-sub">
+									Eye-catching brochures to showcase your
+									products and services.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- -------Box 2---------- -->
+					<div class="about-box">
+						<img src="images/about-2.jpg" alt="Face Massage" />
+						<div class="about-overlay2">
+							<div class="overlay-text">
+								<h2>Report Cards</h2>
+								<p class="overlay-sub">
+									Custom report cards for educational
+									institutions with your specific
+									requirements.
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- -------Box 3---------- -->
+					<div class="about-box">
+						<img src="images/about-3.jpg" alt="Back Massage" />
+						<div class="about-overlay3">
+							<div class="overlay-text">
+								<h2>Certificates</h2>
+								<p class="overlay-sub">
+									Professional certificates for recognition,
+									achievements, and special events.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- --------------Services--------------- -->
+		<section class="services container" id="services">
+			<!-- ------------------Services Content---------- -->
+			<div class="swiper services-content">
+				<div class="swiper-wrapper">
+					<!-- ---------------------------------Box 1----------------------- -->
+					<div class="swiper-slide">
+						<div class="service-box">
+							<div class="ser-img">
+								<img src="images/service-1.jpg" alt="" />
+							</div>
+							<div class="box-data">
+								<h2 class="heading2 top">Our Services</h2>
+								<h2 class="top">A4 - Printing</h2>
+								<p>
+									We offer the highest quality prints in the
+									city at unbeatable prices. From standard 180
+									GSM shiny paper to a variety of other paper
+									types and sizes, we cater to all your
+									printing needs.
+								</p>
+								<div class="package">
+									<div class="p-box">
+										<!-- <i class="fa-solid fa-certificate"></i> -->
+										<i class="bx bxs-badge-check"></i>
+										<span class="top"
+											>Colorful Shiny - ₹10</span
+										>
+									</div>
+									<div class="p-box">
+										<!-- <i class="fa-solid fa-certificate"></i> -->
+										<i class="bx bxs-badge-check"></i>
+										<span class="top"
+											>Black & White Shiny - ₹5</span
+										>
+									</div>
+									<!-- -------Btn------- -->
+									<a href="print-request.html" class="book-now btn"
+										>Print Now</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ---------------------------------Box 2----------------------- -->
+					<div class="swiper-slide">
+						<div class="service-box">
+							<div class="ser-img">
+								<img src="images/service-2.jpg" alt="" />
+							</div>
+							<div class="box-data">
+								<h2 class="heading2 top">Our Services</h2>
+								<h2 class="top">Photocopy & Notes Printing</h2>
+								<p>
+									We provide high-quality black-and-white
+									photocopies and notes printing with non
+									smudge ink, ensuring long-lasting, crisp
+									prints every time.
+								</p>
+								<div class="package">
+									<div class="p-box">
+										<!-- <i class="fa-solid fa-certificate"></i> -->
+										<i class="bx bxs-badge-check"></i>
+										<span class="top"
+											>More than 10 pages - ₹0.50</span
+										>
+									</div>
+									<div class="p-box">
+										<!-- <i class="fa-solid fa-certificate"></i> -->
+										<i class="bx bxs-badge-check"></i>
+										<span class="top"
+											>Less than 10 pages - ₹1</span
+										>
+									</div>
+									<!-- -------Btn------- -->
+									<a href="print-request.html" class="book-now btn"
+										>Print Now</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ---------------------------------Box 3----------------------- -->
+					<div class="swiper-slide" id="album">
+						<div class="service-box">
+							<div class="ser-img">
+								<img src="images/service-3.jpg" alt="" />
+							</div>
+							<div class="box-data">
+								<h2 class="heading2 top">Our Services</h2>
+								<h2 class="top">Album Photo Printing</h2>
+								<p class="top">
+									We offer a range of premium photo printing
+									options, delivering vibrant, glossy, and
+									highly accurate prints. Using the finest
+									quality sheets, we ensure album photos look
+									stunning and last for years to come.
+								</p>
+								<div class="package">
+									<div class="p-box">
+										<!-- <i class="fa-solid fa-certificate"></i> -->
+										<i class="bx bxs-badge-check"></i>
+										<span class="top"
+											>4 x 6 inches - ₹15</span
+										>
+									</div>
+									<div class="p-box">
+										<!-- <i class="fa-solid fa-certificate"></i> -->
+										<i class="bx bxs-badge-check"></i>
+										<span class="top">A4 Sheet - ₹25</span>
+									</div>
+									<!-- -------Btn------- -->
+									<a href="whatsapp.html" class="book-now btn"
+										>Print Now</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ---------------------------------Box 4----------------------- -->
+					<div class="swiper-slide">
+						<div class="service-box">
+							<div class="ser-img">
+								<img src="images/service-4.jpg" alt="" />
+							</div>
+							<div class="box-data">
+								<h2 class="heading2 top">Our Services</h2>
+								<h2 class="top">Flex Printing</h2>
+								<p>
+									We provide superior quality flex printing at
+									best prices, perfect for banners,
+									advertisements, and event displays. Our
+									prints are vibrant, durable, and designed to
+									make a lasting impact.
+								</p>
+								<div class="package">
+									<div class="p-box">
+										<!-- <i class="fa-solid fa-certificate"></i> -->
+										<i class="bx bxs-badge-check"></i>
+										<span class="top"
+											>Normal Flex - ₹10 per square
+											foot</span
+										>
+									</div>
+									<div class="p-box">
+										<!-- <i class="fa-solid fa-certificate"></i> -->
+										<i class="bx bxs-badge-check"></i>
+										<span class="top"
+											>Star Flex - ₹15 per square
+											foot</span
+										>
+									</div>
+									<!-- -------Btn------- -->
+									<a href="whatsapp.html" class="book-now btn"
+										>Print Now</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ---------------------------------Box 5----------------------- -->
+					<div class="swiper-slide">
+						<div class="service-box">
+							<div class="ser-img">
+								<img src="images/service-5i.jpg" alt="" />
+							</div>
+							<div class="box-data">
+								<h2 class="heading2 top">Our Services</h2>
+								<h2 class="top">Jumbo Xerox</h2>
+								<p>
+									We offer high quality jumbo Xerox printing
+									in all sizes, from A0 to A4. whether you
+									need large posters, architectural plans, or
+									standard-sized copies, we deliver sharp,
+									clear prints every time.
+								</p>
+								<div class="package">
+									<div class="p-box">
+										<!-- <i class="fa-solid fa-certificate"></i> -->
+										<i class="bx bxs-badge-check"></i>
+										<span class="top"
+											>Color - (₹10-₹50)</span
+										>
+									</div>
+									<div class="p-box">
+										<!-- <i class="fa-solid fa-certificate"></i> -->
+										<i class="bx bxs-badge-check"></i>
+										<span class="top"
+											>Black & White - (₹5-₹25)</span
+										>
+									</div>
+									<!-- -------Btn------- -->
+									<a href="whatsapp.html" class="book-now btn"
+										>Print Now</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ---------------------------------Box 6----------------------- -->
+					<div class="swiper-slide">
+						<div class="service-box">
+							<div class="ser-img">
+								<img src="images/service-6.jpg" alt="" />
+							</div>
+							<div class="box-data">
+								<h2 class="heading2 top">Our Services</h2>
+								<h2 class="top">Spiral Binding</h2>
+								<p>
+									We offer durable and professional spiral
+									binding services, perfect for projects,
+									reports, notes, and presentations.
+								</p>
+								<div class="package">
+									<div class="p-box">
+										<!-- <i class="fa-solid fa-certificate"></i> -->
+										<i class="bx bxs-badge-check"></i>
+										<span class="top"
+											>Starting from - ₹20</span
+										>
+									</div>
+
+									<!-- -------Btn------- -->
+									<a href="whatsapp.html" class="book-now btn"
+										>Bind Now</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- ---------------------------------Box 7----------------------- -->
+					<div class="swiper-slide" id="idcard">
+						<div class="service-box">
+							<div class="ser-img">
+								<img src="images/service-7.jpg" alt="" />
+							</div>
+							<div class="box-data">
+								<h2 class="heading2 top">Our Services</h2>
+								<h2 class="top">PVC ID Cards</h2>
+								<p>
+									We design and print high-quality PVC ID
+									cards, perfect for businesses, schools,
+									events, and personal use. Our cards are
+									durable, waterproof, and have a premium
+									finish.
+								</p>
+								<div class="package">
+									<div class="p-box">
+										<!-- <i class="fa-solid fa-certificate"></i> -->
+										<i class="bx bxs-badge-check"></i>
+										<span class="top"
+											>Starting from - ₹50</span
+										>
+									</div>
+
+									<!-- -------Btn------- -->
+									<a href="whatsapp.html" class="book-now btn"
+										>Print Now</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- --------------Swiper Btns-------------- -->
+			<div class="slider-btns">
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+			</div>
+		</section>
+
+		<!-- -------------------------Testimonial---------------------------- -->
+		<section class="testimonial container" id="testimonial">
+			<h2 class="heading3 top">Testimonial</h2>
+			<h3 class="top">
+				What Our Beloved <br />
+				Customers Say About Us
+			</h3>
+			<!-- ---------------Testimonial Data------------- -->
+			<div class="testimonial-data">
+				<!-- --------Box 1---------- -->
+				<div class="t-box">
+					<div class="t-img">
+						<img src="images/testimonial-1.jpg" alt="" />
+						<i class="fa-solid fa-quote-right" id="q1"></i>
+					</div>
+					<!-- <i class="fa-solid fa-quote-right"></i> -->
+					<h2 class="top">Priya Iyer</h2>
+					<p class="top">
+						Galaxy Copiers delivered outstanding custom certificates
+						for our graduation ceremony. Professional, timely, and
+						beautifully crafted.
+					</p>
+				</div>
+				<!-- --------Box 2---------- -->
+				<div class="t-box">
+					<div class="t-img">
+						<img src="images/testimonial-2.jpg" alt="" />
+						<i class="fa-solid fa-quote-right" id="q2"></i>
+					</div>
+					<!-- <i class="fa-solid fa-quote-right"></i> -->
+					<h2 class="top">Sneha Verma</h2>
+					<p class="top">
+						As a small business owner, I rely on high-quality,
+						affordable marketing materials - and they always
+						deliver.
+					</p>
+				</div>
+				<!-- --------Box 3---------- -->
+				<div class="t-box">
+					<div class="t-img">
+						<img src="images/testimonial-3.jpg" alt="" />
+						<i class="fa-solid fa-quote-right" id="q3"></i>
+					</div>
+					<!-- <i class="fa-solid fa-quote-right"></i> -->
+					<h2 class="top">Mohit Bansal</h2>
+					<p class="top">
+						Galaxy Copiers did an amazing job on our brochures -
+						vibrant colors and top-notch print quality.
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- --------------------New footer----------------------- -->
+		<footer class="footer">
+			<div class="footer-container">
+				<div class="footer-col">
+					<a href="index.html">
+						<img
+						src="./images/logo.png"
+						alt="Logo"
+						class="footer-logo"
+					/>
+					</a>
+					
+					<p>
+						Professional printing solutions for all your business
+						and personal needs.
+					</p>
+					<div class="social-icons">
+						<a
+							href="https://www.facebook.com/copycafé/"
+							target="_blank"
+							><i class="fab fa-facebook-f"></i
+						></a>
+						<a
+							href="https://www.justdial.com/Bhopal"
+							target="_blank"
+							><i class="fa-regular fa-address-book"></i
+						></a>
+						<a href="https://wa.me/917489794090" target="_blank"
+							><i class="fab fa-whatsapp"></i
+						></a>
+					</div>
+				</div>
+
+				<div class="footer-col">
+					<h4 class="footer-heading blue">Our Services</h4>
+					<ul>
+						<li><a href="contact.html">Book Printing</a></li>
+						<li><a href="#idcard">ID Cards</a></li>
+						<li><a href="contact.html">Brochures</a></li>
+						<li><a href="#album">Album Photos</a></li>
+						<li><a href="contact.html">Report Cards</a></li>
+						<li><a href="contact.html">Certificates</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h4 class="footer-heading pink">Quick Links</h4>
+					<ul>
+						<li><a href="#about">About Us</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#testimonial">Testimonials</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li><a href="privacy-policy.html">Privacy Policy</a></li>
+						<li><a href="terms.html">Terms of Service</a></li>
+					</ul>
+				</div>
+
+				<div class="footer-col">
+					<h4 class="footer-heading yellow">Newsletter</h4>
+					<p>
+						Subscribe to our newsletter for the latest updates and
+						offers.
+					</p>
+					<form class="subscribe-form" name="submit-to-google-sheet">
+						<input
+							type="email"
+							placeholder="Your email"
+							name="email"
+							required
+						/>
+						<button type="submit">Subscribe</button>
+					</form>
+					<p
+						id="form-message"
+						style="color: green; margin-top: 10px"
+					></p>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				© 2026 Copy Café. All rights reserved.
+			</div>
+		</footer>
+
+		<!-- Swiper JS -->
+		<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+		<!-- ------Link To Js--------- -->
+		<script src="./main.js"></script>
+	</body>
+</html>
